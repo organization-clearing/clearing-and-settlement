@@ -10,9 +10,23 @@
 	<artifactId>clearing-filefront</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<spring-version>4.3.5.RELEASE</spring-version>
+	</properties>
+
 	<dependencies>
+		<!-- Spring版本控制器 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
 
-
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
 
 	</dependencies>
 
