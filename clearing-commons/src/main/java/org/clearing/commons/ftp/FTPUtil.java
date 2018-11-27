@@ -1,4 +1,4 @@
-package org.dongyao.commons.ftp;
+package org.clearing.commons.ftp;
 
 public interface FTPUtil {
 	
