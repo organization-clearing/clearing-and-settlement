@@ -5,7 +5,9 @@
     <artifactId>clearing-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
   <groupId>org.clearing</groupId>
   <artifactId>clearing-calculation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
 </project>
