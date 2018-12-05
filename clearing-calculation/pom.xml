@@ -12,11 +12,42 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
+		<!-- 【父项目依】 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+
+		
+		<!-- 【项目间依赖】 -->
+		<!-- clearing-rpc 依赖 -->
+		<dependency>
+			<groupId>org.clearing</groupId>
+			<artifactId>clearing-rpc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- clearing-commons 依赖 -->
 		<dependency>
 			<groupId>org.clearing</groupId>
 			<artifactId>clearing-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		
+		<!-- 【项目依赖】 -->
+		<!-- servlet依赖 -->
+		<!-- tomcat中也有servlet-api包，这样，发生了冲突,servlet只有在测试阶段 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- dubbo依赖 -->
@@ -46,6 +77,32 @@
 		</dependency>
 
 	</dependencies>
-
-
+	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalProjectnatures>
+                        <projectnature>org.eclipse.jdt.core.javanature</projectnature>
+                        <!-- 
+                        <projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
+                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                         -->
+                    </additionalProjectnatures>
+                    <additionalBuildcommands>
+                        <buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
+                        <!-- 
+                        <buildcommand>org.eclipse.m2e.core.maven2Builder</buildcommand>
+                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+                         -->
+                    </additionalBuildcommands>
+                </configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
 </project>

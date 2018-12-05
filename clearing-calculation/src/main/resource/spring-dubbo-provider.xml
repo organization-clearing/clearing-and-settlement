@@ -12,12 +12,14 @@
 	<dubbo:application name="clearing-calculation"/>
 	
 	<!-- 注册中心暴露服务地址 -->
-	<dubbo:registry address="192.168.200.128:2181" />
+	<dubbo:registry address="127.0.0.1:2181" />
 	
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20880"/>
-
+	
+	<!-- 通过maven依赖，再通过spring装配，不需要实例化 -->
 	<bean id="dubboServer" class="org.clearing.commons.server.impl.ProDubboServer"></bean>
 	
+	<dubbo:service interface="org.clearing.commons.server.DubboService" ref="dubboServer" timeout="5400000"></dubbo:service>
 	
 </beans>
