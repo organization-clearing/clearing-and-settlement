@@ -79,7 +79,7 @@
 	</dependencies>
 	
 	
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -88,21 +88,21 @@
                 <configuration>
                     <additionalProjectnatures>
                         <projectnature>org.eclipse.jdt.core.javanature</projectnature>
-                        <!-- 
+                        
                         <projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
                         <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-                         -->
+                        
                     </additionalProjectnatures>
                     <additionalBuildcommands>
                         <buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
-                        <!-- 
+                        
                         <buildcommand>org.eclipse.m2e.core.maven2Builder</buildcommand>
                         <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
-                         -->
+                        
                     </additionalBuildcommands>
                 </configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 	
 </project>
