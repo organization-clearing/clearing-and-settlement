@@ -5,7 +5,15 @@
 	<artifactId>clearing-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	
+	<modules>
+		<module>clearing-calculation</module>	
+		<module>clearing-commons</module>	
+		<module>clearing-filecore</module>	
+		<module>clearing-filefront</module>	
+		<module>clearing-rpc</module>	
+	</modules>
+	
 	<properties>
 		<spring-version>4.3.10.RELEASE</spring-version>
 	</properties>

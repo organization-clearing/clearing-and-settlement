@@ -11,12 +11,5 @@
 	<artifactId>clearing-filefront</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.clearing</groupId>
-			<artifactId>clearing-commons</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 
 </project>
