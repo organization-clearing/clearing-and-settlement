@@ -10,6 +10,7 @@
 	<groupId>org.clearing</groupId>
 	<artifactId>clearing-calculation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<dependencies>
 		<!-- 【父项目依】 -->
@@ -34,7 +35,12 @@
 		</dependency>
 		
 		<!-- clearing-commons 依赖 -->
-		
+		<dependency>
+			<groupId>org.clearing</groupId>
+			<artifactId>clearing-commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
 		
 		<!-- 【项目依赖】 -->
 		<!-- servlet依赖 -->
