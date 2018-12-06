@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans        
+    http://www.springframework.org/schema/beans/spring-beans.xsd        
+    http://code.alibabatech.com/schema/dubbo        
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 用于区分管理应用。（名字和项目名统一） -->
+    <dubbo:application name="clearing-calculation"  />
+		
+		
+	
+	<!-- zookeeper注册中心 -->
+	<dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+	<dubbo:protocol contextpath="dubbo" port="20881" />
+	<dubbo:monitor protocol="registry"/>
+				
+
+    <!-- 和本地bean一样实现服务 -->
+    <bean id="dubboServer" class="org.clearing.frame.server.impl.DubboServer" />
+
+	<!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="org.clearing.frame.server.BaseServer" protocol="dubbo" ref="dubboServer" />
+
+</beans>
