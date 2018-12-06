@@ -1,22 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.clearing</groupId>
 		<artifactId>clearing-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
 	<groupId>org.clearing</groupId>
-	<artifactId>clearing-filecore</artifactId>
+	<artifactId>clearing-commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>清结算文件核心模块</name>
-	<description>清结算业务-文件解析过滤模块</description>
-	
-	<properties>
-		<project-version>0.0.1-SNAPSHOT</project-version>
-	</properties>
-	
+
 	<dependencies>
 		<!-- 父项目依赖 -->
 		<dependency>
@@ -25,9 +21,9 @@
 		</dependency>
 
 		<!-- 项目间依赖 -->
-		
-		
+
 		<!-- 项目依赖 -->
 	</dependencies>
-
+	
+	
 </project>
