@@ -4,14 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- <import resource="dubbo-provider.xml"/> -->
-	
-	<bean id="demotest" class="org.clearing.calculation.test.DemoTest"/>
-	
-	<!-- <bean id="ftp" class="org.clearing.commons.ftpImpl.XStreamFTPClientImpl"/>
-	
-	和本地bean一样实现服务
-    <bean id="dubboServer" class="org.clearing.frame.server.impl.DubboServer" /> -->
-    
+	<import resource="dubbo-provider.xml"/>
 	
 </beans>

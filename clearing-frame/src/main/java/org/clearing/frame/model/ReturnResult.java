@@ -1,25 +1,24 @@
 package org.clearing.frame.model;
 
-import javax.naming.spi.DirStateFactory.Result;
+import org.clearing.frame.constant.Result;
 
 //需要继承Serializable，这里暂时不继承。
-public class ReturnResult {
+public class ReturnResult implements java.io.Serializable {
 	
 	//枚举类,这里变量设置为包权限
-	Result result;
+	Result result ;
 	
-	private boolean returnResult = false;
-	
-	public ReturnResult() {
-		returnResult = true;
+	public ReturnResult(Result result) {
+		this.result = result;
 	}
 
-	public boolean isReturnResult() {
-		return returnResult;
+	public Result getResult() {
+		return result;
 	}
 
-	public void setReturnResult(boolean returnResult) {
-		this.returnResult = returnResult;
+	public void setResult(Result result) {
+		this.result = result;
 	}
+	
 	
 }
